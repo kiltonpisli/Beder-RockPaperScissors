@@ -4,20 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" href="style.css">
   <title>Beder | Rock, Paper, Scissors</title>
 </head>
 <body>
-  <div id="pScoreE">12</div>
-  <div id="cScoreE">11</div>
+  <header>
+    <img src="./images/logo.svg">
+    <div class="info">
+      <div class="score">Your Score: <span id="pScoreE">12</span></div>
+      <div class="score">Computer Score: <span id="cScoreE">11</span></div>
+    </div>
+  </header>
 
-  <button onclick="play('r')">Rock</button>
-  <button onclick="play('p')">Paper</button>
-  <button onclick="play('s')">Scissors</button>
-
-  <div id="player"></div>
-  <div id="computer"></div>
-
-  <div id="win_lose">You Win</div>
+ <div id="game">
+   <button onclick="play('r')">Rock</button>
+   <button onclick="play('p')">Paper</button>
+   <button onclick="play('s')">Scissors</button>
+  
+   <div id="player"></div>
+   <div id="computer"></div>
+  
+   <div id="win_lose"></div>
+ </div>
 
 
   <script src="script.js"></script>

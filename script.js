@@ -1,13 +1,20 @@
-var computerOptions = ["r", "p", "s"];
 var win_lose = document.getElementById("win_lose");
 var pE = document.getElementById("player");
 var cE = document.getElementById("computer");
-
 var pScoreE = document.getElementById("pScoreE");
-var pScore = 0;
 var cScoreE = document.getElementById("cScoreE");
-var cScore = 0;
 
+var pScore, cScore, computerOptions;
+
+function init(){
+    computerOptions = ["r", "p", "s"];
+    pScore = 0;
+    cScore = 0;
+    
+    pScoreE.innerHTML = pScore;
+    cScoreE.innerHTML = cScore;
+}
+init();
 
 function play(player){
     var rn = Math.floor(Math.random() * 3);
