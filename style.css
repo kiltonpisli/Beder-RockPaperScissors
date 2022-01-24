@@ -8,7 +8,7 @@ header{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    max-width: 701px;
+    max-width: 700px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -30,13 +30,51 @@ header .info{
     box-sizing: border-box;
     border-radius: 10px;
 }
-
-
-
-
-
 #game{
     display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px;
+    margin-left: 0;
+}
+#game > div{
+    position: absolute;
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#game > div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: none;
+}
+#game .paper{
+    top: 0;
+    transform: translate(-50%, -50%);
+    border: 10px solid hsl(230, 89%, 62%);
+}
+#game .scissors{
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    border: 10px solid hsl(39, 89%, 49%);
+}
+#game .rock{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 10px solid hsl(349, 71%, 52%);
+
+}
+
+
+
+
+#gamet{
+    display: none;
+    /* display: inline-block; */
     text-align: center;
     position: relative;
     left: 50%;
