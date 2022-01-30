@@ -18,10 +18,24 @@
 
   <section id="game">
     <img src="./images/bg-triangle.svg" alt="">
-    <div class="paper"><img src="./images/icon-paper.svg" alt=""></div>
-    <div class="scissors"><img src="./images/icon-scissors.svg" alt=""></div>
-    <div class="rock"><img src="./images/icon-rock.svg" alt=""></div>
+    <div class="paper" onclick="play('p')"><img src="./images/icon-paper.svg" alt=""></div>
+    <div class="scissors" onclick="play('s')"><img src="./images/icon-scissors.svg" alt=""></div>
+    <div class="rock" onclick="play('r')"><img src="./images/icon-rock.svg" alt=""></div>
   </section>
+
+  <button id="rules" onclick="show_hide_modal('show')">RULES</button>
+
+  <section id="rules_modal" style="display: none;">
+    <div class="modal">
+      <!-- <div class="head"> -->
+        <h2>RULES</h2>
+        <img class="close" onclick="show_hide_modal('close')" src="./images/icon-close.svg">
+      <!-- </div> -->
+      <img src="./images/image-rules.svg" alt="">
+    </div>
+  </section>
+
+
 
  <div id="gamet">
    <button onclick="play('r')">Rock</button>

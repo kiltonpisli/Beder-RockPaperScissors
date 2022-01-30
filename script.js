@@ -3,6 +3,7 @@ var pE = document.getElementById("player");
 var cE = document.getElementById("computer");
 var pScoreE = document.getElementById("pScoreE");
 var cScoreE = document.getElementById("cScoreE");
+var rulesModal = document.getElementById("rules_modal");
 
 var pScore, cScore, computerOptions;
 
@@ -59,4 +60,12 @@ function play(player){
     cScoreE.innerHTML = cScore;
     win_lose.innerHTML = output;
     // console.log(rn);
+}
+
+function show_hide_modal(action){
+    if(action == "show"){
+        rulesModal.style.display = "block";
+    }else{
+        rulesModal.style.display = "none";
+    }
 }
