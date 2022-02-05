@@ -113,13 +113,15 @@ header .info{
     cursor: pointer;
 }
 
+#result{
+    color: #fff;
+}
 
-#gamet{
+/* #gamet{
     display: none;
-    /* display: inline-block; */
     text-align: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-}
+} */

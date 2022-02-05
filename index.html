@@ -23,6 +23,13 @@
     <div class="rock" onclick="play('r')"><img src="./images/icon-rock.svg" alt=""></div>
   </section>
 
+  <div id="result" style="display: none;">
+    <div id="player">0</div>
+    <div id="computer">0</div>
+    <button onclick="playAgain()">Play Again</button>
+    <div id="win_lose"></div>
+  </div>
+
   <button id="rules" onclick="show_hide_modal('show')">RULES</button>
 
   <section id="rules_modal" style="display: none;">
@@ -37,7 +44,7 @@
 
 
 
- <div id="gamet">
+ <!-- <div id="gamet">
    <button onclick="play('r')">Rock</button>
    <button onclick="play('p')">Paper</button>
    <button onclick="play('s')">Scissors</button>
@@ -46,7 +53,7 @@
    <div id="computer"></div>
   
    <div id="win_lose"></div>
- </div>
+ </div> -->
 
 
   <script src="script.js"></script>

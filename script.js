@@ -3,7 +3,9 @@ var pE = document.getElementById("player");
 var cE = document.getElementById("computer");
 var pScoreE = document.getElementById("pScoreE");
 var cScoreE = document.getElementById("cScoreE");
+var resultE = document.getElementById("result");
 var rulesModal = document.getElementById("rules_modal");
+var gameE = document.getElementById("game");
 
 var pScore, cScore, computerOptions;
 
@@ -54,12 +56,20 @@ function play(player){
         }
     }
 
-    pE.innerHTML = player;
-    cE.innerHTML = computer;
+    pE.innerHTML = "player choice: " + player;
+    cE.innerHTML = "computer choice: " + computer;
     pScoreE.innerHTML = pScore;
     cScoreE.innerHTML = cScore;
-    win_lose.innerHTML = output;
+    win_lose.innerHTML = "result: " + output;
+
+    resultE.style.display = "block";
+    gameE.style.display = "none";
     // console.log(rn);
+}
+
+function playAgain(){
+    gameE.style.display = "inline-block";
+    resultE.style.display = "none";
 }
 
 function show_hide_modal(action){
